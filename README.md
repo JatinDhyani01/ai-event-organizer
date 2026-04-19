@@ -1,85 +1,105 @@
 # 🚀 AI Event Organizer
 
-An AI-powered full-stack event management system built using FastAPI, Next.js, and OpenAI.
+A full-stack event management application that uses AI to simplify planning, organizing, and managing events.
+Built with FastAPI, Next.js, and OpenAI.
 
 ---
 
-## 🧠 Features
+## 📌 Overview
 
-* 📅 Create & manage events
-* 🤖 AI chatbot for event interaction
-* ⚡ Fast backend with FastAPI
-* 🎨 Modern UI with Next.js
-* 💾 SQLite database
+Planning events can be repetitive and time-consuming.
+This project aims to reduce that friction by integrating AI into the workflow — helping users generate ideas, manage schedules, and interact through a simple interface.
+
+The system is designed as a clean full-stack application with a modern frontend and a lightweight backend.
+
+---
+
+## ✨ Features
+
+* Create and manage events easily
+* AI-assisted suggestions for event planning
+* Chat-based interaction for quick inputs
+* Clean and responsive UI
+* Fast backend with REST APIs
 
 ---
 
 ## 🛠 Tech Stack
 
-* **Frontend:** Next.js, React
-* **Backend:** FastAPI, Python
-* **Database:** SQLite
-* **AI:** OpenAI API
+**Frontend**
+
+* Next.js (React framework)
+* JavaScript
+* Tailwind CSS
+
+**Backend**
+
+* FastAPI (Python)
+* SQLite database
+* OpenAI API integration
 
 ---
 
 ## 📂 Project Structure
 
-```
+```text
 ai-event-organizer/
-├── backend/
-│   ├── main.py
-│   ├── models.py
-│   ├── database.py
-│   ├── .env
-├── ai-event-frontend/
-│   ├── app/
-│   ├── components/
-│   ├── .env.local
+│
+├── backend/        # FastAPI server
+├── frontend/       # Next.js app
+├── README.md
 ```
 
 ---
 
-## ⚙️ Setup
+## ⚙️ Setup Instructions
 
-### 1. Clone
+### 1. Clone the repository
 
-```
+```bash
 git clone https://github.com/JatinDhyani01/ai-event-organizer.git
 cd ai-event-organizer
 ```
 
 ---
 
-### 2. Backend
+### 2. Backend setup
 
-```
+```bash
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
+Backend will run on:
+http://127.0.0.1:8000
+
 ---
 
-### 3. Frontend
+### 3. Frontend setup
 
-```
-cd ai-event-frontend
+```bash
+cd frontend
 npm install
 npm run dev
 ```
 
+Frontend will run on:
+http://localhost:3000
+
 ---
 
-## 🔐 Environment Variables
+## 🔑 Environment Variables
 
-### Backend `.env`
+Create the following files:
+
+### backend/.env
 
 ```
-OPENAI_API_KEY=your_api_key
+OPENAI_API_KEY=your_openai_api_key
 ```
 
-### Frontend `.env.local`
+### frontend/.env.local
 
 ```
 NEXT_PUBLIC_API_URL=http://127.0.0.1:8000
@@ -87,15 +107,28 @@ NEXT_PUBLIC_API_URL=http://127.0.0.1:8000
 
 ---
 
-## 🚀 Future Improvements
+## 🚧 Current Status
 
-* Authentication (JWT)
-* Deployment (Vercel + Render)
-* AI recommendations
-* Notifications
+This project is under active development.
+Core features are implemented, and improvements are ongoing.
 
 ---
 
-## 👨‍💻 Author
+## 🚀 Future Improvements
+
+* User authentication system
+* Persistent user-specific event storage
+* Calendar and reminder integration
+* Deployment to cloud (Vercel + Render)
+
+---
+
+## 👤 Author
 
 Jatin Dhyani
+
+---
+
+## 📄 License
+
+This project is open for learning and personal use.
